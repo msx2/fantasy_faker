@@ -1,26 +1,42 @@
 # FantasyFaker
 
-Inspired by [ffaker](https://github.com/EmmanuelOga/ffaker), used to easily generate fake data: name, nickname.
+Inspired by [ffaker](https://github.com/EmmanuelOga/ffaker), used to easily generate fake random data: e.g. name, nickname.
 
-Created on a sole purpose to use in fantasy-climate projects.
+Created on a sole purpose to be used in fantasy-climate projects. Currently supports only Polish language.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'fantasy_faker'
+```
+gem 'fantasy_faker'
+```
 
 And then execute:
 
-    $ bundle
+```
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install fantasy_faker
+```
+$ gem install fantasy_faker
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'fantasy_faker'
+
+FantasyFaker::Character.male_name => "Sarillon"
+FantasyFaker::Character.male_nickname => "Dziecię Pustyni"
+FantasyFaker::Character.male_full_name => "Aemanti Lepka Dłoń"
+
+FantasyFaker::Character.female_name => "Linani"
+FantasyFaker::Character.female_nickname => "Wstydliwa"
+FantasyFaker::Character.female_full_name => "Setaris Krwawa Klinga"
+```    
 
 ## Contributing
 
