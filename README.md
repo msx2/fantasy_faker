@@ -1,4 +1,4 @@
-[![Codeship Status for msx2/fantasy_faker](https://codeship.com/projects/367f3fe0-7500-0132-c61e-22ab3bab314c/status?branch=master)](https://codeship.com/projects/55108)
+[![Codeship Status for msx2/fantasy_faker](https://codeship.com/projects/367f3fe0-7500-0132-c61e-22ab3bab314c/status?branch=master)](https://codeship.com/projects/55108) [![Code Climate](https://codeclimate.com/github/msx2/fantasy_faker/badges/gpa.svg)](https://codeclimate.com/github/msx2/fantasy_faker)
 
 # FantasyFaker
 
