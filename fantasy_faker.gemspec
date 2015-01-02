@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = FantasyFaker::VERSION
   spec.authors       = ['Konrad Jurkowski']
   spec.email         = ['konrad@jurkowski.me']
-  spec.description   = 'Fantasy Faker, generates dummy data.'
+  spec.description   = 'Generate fake random data for fantasy-climate projects'
   spec.summary       = 'Fantasy Faker, generates dummy data.'
   spec.homepage      = 'https://github.com/msx2/fantasy_faker'
   spec.license       = 'MIT'
