@@ -1,3 +1,5 @@
+[![Codeship Status for msx2/fantasy_faker](https://codeship.com/projects/367f3fe0-7500-0132-c61e-22ab3bab314c/status?branch=master)](https://codeship.com/projects/55108)
+
 # FantasyFaker
 
 Inspired by [ffaker](https://github.com/EmmanuelOga/ffaker), used to easily generate fake random data: e.g. name, nickname.
