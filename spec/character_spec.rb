@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe FantasyFaker::Name do
+describe FantasyFaker::Character do
 
   describe '#male_name' do
     subject { described_class.male_name }

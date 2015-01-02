@@ -2,7 +2,7 @@
 
 module FantasyFaker
 
-  module Name
+  module Character
     extend BaseModule
     extend self
 
