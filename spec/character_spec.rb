@@ -2,8 +2,8 @@ require 'spec_helper'
 
 describe FantasyFaker::Character do
 
-  describe '#male_name' do
-    subject { described_class.male_name }
+  describe '#male_first_name' do
+    subject { described_class.male_first_name }
 
     it { is_expected.to match(/[a-z]+/i) }
   end
@@ -14,14 +14,14 @@ describe FantasyFaker::Character do
     it { is_expected.to match(/[ a-zęóąśłżźćń]+/i) }
   end
 
-  describe '#male_full_name' do
-    subject { described_class.male_nickname }
+  describe '#male_name' do
+    subject { described_class.male_name }
 
     it { is_expected.to match(/[ a-zęóąśłżźćń]+/i) }
   end
 
-  describe '#female_name' do
-    subject { described_class.female_name }
+  describe '#female_first_name' do
+    subject { described_class.female_first_name }
 
     it { is_expected.to match(/[a-z]+/i) }
   end
@@ -32,8 +32,8 @@ describe FantasyFaker::Character do
     it { is_expected.to match(/[ a-zęóąśłżźćń]+/i) }
   end
 
-  describe '#female_full_name' do
-    subject { described_class.female_nickname }
+  describe '#female_name' do
+    subject { described_class.female_name }
 
     it { is_expected.to match(/[ a-zęóąśłżźćń]+/i) }
   end

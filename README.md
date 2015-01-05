@@ -33,14 +33,14 @@ $ gem install fantasy_faker
 ```ruby
 require 'fantasy_faker'
 
-FantasyFaker::Character.male_name => "Sarillon"
+FantasyFaker::Character.male_first_name => "Sarillon"
 FantasyFaker::Character.male_nickname => "Dziecię Pustyni"
-FantasyFaker::Character.male_full_name => "Aemanti Lepka Dłoń"
+FantasyFaker::Character.male_name => "Sarillon Dziecię Pustyni" # OR "Sarillon"
 
-FantasyFaker::Character.female_name => "Linani"
+FantasyFaker::Character.female_first_name => "Linani"
 FantasyFaker::Character.female_nickname => "Wstydliwa"
-FantasyFaker::Character.female_full_name => "Setaris Krwawa Klinga"
-```    
+FantasyFaker::Character.female_name => "Linani Wstydliwa" # OR "Linani"
+```
 
 ## Contributing
 

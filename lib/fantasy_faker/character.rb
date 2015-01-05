@@ -6,7 +6,7 @@ module FantasyFaker
     extend BaseModule
     extend self
 
-    def male_name
+    def male_first_name
       "%s%s" % [NAME_PREFIXES_MALE.rand, NAME_SUFIXES_MALE.rand]
     end
 
@@ -14,11 +14,13 @@ module FantasyFaker
       NICKNAMES_MALE.rand
     end
 
-    def male_full_name
-      "%s %s" % [male_name, male_nickname]
+    def male_name
+      first_name = male_first_name
+
+      ["#{first_name} #{male_nickname}", first_name].sample
     end
 
-    def female_name
+    def female_first_name
       "%s%s" % [NAME_PREFIXES_FEMALE.rand, NAME_SUFIXES_FEMALE.rand]
     end
 
@@ -26,8 +28,10 @@ module FantasyFaker
       NICKNAMES_FEMALE.rand
     end
 
-    def female_full_name
-      "%s %s" % [female_name, female_nickname]
+    def female_name
+      first_name = female_first_name
+
+      ["#{first_name} #{female_nickname}", first_name].sample
     end
 
   end
