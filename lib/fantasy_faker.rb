@@ -1,5 +1,5 @@
 module FantasyFaker
-  VERSION = '0.0.2'
+  VERSION = '0.0.3'
 
   require 'fantasy_faker/utils/array_utils'
   require 'fantasy_faker/utils/base_module'
