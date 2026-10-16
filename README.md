@@ -64,6 +64,10 @@ bundle exec rubocop
 bundle exec rake # both
 ```
 
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/msx2/fantasy_faker. When submitting changes, please make sure specs and RuboCop pass and document user-facing changes in [CHANGELOG.md](CHANGELOG.md).
+
 ## License
 
 MIT, see [LICENSE.txt](LICENSE.txt).

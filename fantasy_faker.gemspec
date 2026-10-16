@@ -13,8 +13,9 @@ Gem::Specification.new do |spec|
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 3.0'
 
-  spec.files = Dir['lib/**/*.rb', 'locales/**/*.yml', 'README.md', 'LICENSE.txt']
+  spec.files = Dir['lib/**/*.rb', 'locales/**/*.yml', 'README.md', 'CHANGELOG.md', 'LICENSE.txt']
   spec.require_paths = ['lib']
   spec.metadata['source_code_uri'] = spec.homepage
+  spec.metadata['changelog_uri'] = "#{spec.homepage}/blob/master/CHANGELOG.md"
   spec.metadata['rubygems_mfa_required'] = 'true'
 end
