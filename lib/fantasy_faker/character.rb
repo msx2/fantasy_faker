@@ -1,17 +1,16 @@
-# encoding: utf-8
+# frozen_string_literal: true
 
 module FantasyFaker
-
   module Character
     extend BaseModule
     extend self
 
     def male_first_name
-      "%s%s" % [NAME_PREFIXES_MALE.rand, NAME_SUFIXES_MALE.rand]
+      '%s%s' % [fetch_data(:name_prefixes_male).rand, fetch_data(:name_sufixes_male).rand]
     end
 
     def male_nickname
-      NICKNAMES_MALE.rand
+      fetch_data(:nicknames_male).rand
     end
 
     def male_name
@@ -21,11 +20,11 @@ module FantasyFaker
     end
 
     def female_first_name
-      "%s%s" % [NAME_PREFIXES_FEMALE.rand, NAME_SUFIXES_FEMALE.rand]
+      '%s%s' % [fetch_data(:name_prefixes_female).rand, fetch_data(:name_sufixes_female).rand]
     end
 
     def female_nickname
-      NICKNAMES_FEMALE.rand
+      fetch_data(:nicknames_female).rand
     end
 
     def female_name
@@ -33,7 +32,5 @@ module FantasyFaker
 
       ["#{first_name} #{female_nickname}", first_name].sample
     end
-
   end
-
 end

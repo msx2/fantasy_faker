@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module FantasyFaker
   module ArrayUtils
     def self.const_array(argument)

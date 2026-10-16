@@ -1,5 +1,11 @@
-require 'bundler/gem_tasks'
+# frozen_string_literal: true
 
-Dir.glob('tasks/**/*.rake').each(&method(:import))
+require 'bundler/gem_helper'
+require 'rspec/core/rake_task'
+require 'rubocop/rake_task'
 
-task default: :spec
+Bundler::GemHelper.install_tasks
+RSpec::Core::RakeTask.new(:spec)
+RuboCop::RakeTask.new
+
+task default: %i[spec rubocop]
