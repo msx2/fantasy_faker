@@ -7,6 +7,34 @@ RSpec.describe FantasyFaker::Character do
     FantasyFaker.reset_locale
   end
 
+  { male: 4998, female: 2760 }.each do |gender, minimum_names|
+    describe "#{gender} first-name combinations" do
+      let(:first_names) do
+        prefixes = described_class.fetch_data("name_prefixes_#{gender}")
+        suffixes = described_class.fetch_data("name_sufixes_#{gender}")
+        prefixes.product(suffixes).map(&:join).uniq
+      end
+
+      it 'provides at least twice the original number of distinct names' do
+        expect(first_names.size).to be >= minimum_names
+      end
+
+      it 'does not contain the known vulgar stems in any combination' do
+        expect(first_names.grep(/dildo|milf/i)).to be_empty
+      end
+    end
+  end
+
+  { en: { male: 300, female: 300 }, pl: { male: 298, female: 296 } }.each do |locale, minimums|
+    minimums.each do |gender, minimum_nicknames|
+      it "provides at least twice the original number of distinct #{locale} #{gender} nicknames" do
+        nicknames = FantasyFaker.use_locale(locale) { described_class.fetch_data("nicknames_#{gender}") }
+
+        expect(nicknames.uniq.size).to be >= minimum_nicknames
+      end
+    end
+  end
+
   describe '#male_first_name' do
     subject(:male_first_name) { described_class.male_first_name }
 

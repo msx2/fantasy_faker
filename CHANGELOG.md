@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.0 - October 21, 2026
+
+- Expand the first-name dictionaries from 2,499 to 5,040 distinct male names and from 1,380 to 2,795 distinct female names.
+- Add 150 fantasy-themed nicknames per gender in both English and Polish, with matching translations.
+- Replace the male prefixes that produced `Dildonar` and `Amilfreano`.
+- Sort all name prefixes, suffixes, and nicknames alphabetically.
+
 ## 0.1.0 - October 16, 2026
 
 - Require Ruby 3.0+

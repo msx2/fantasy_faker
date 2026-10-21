@@ -1,303 +1,603 @@
 ---
 nicknames_male:
-- the Adventurer
-- the Bandit
-- the Barbarian
-- the Merciless
-- the Heartless
-- the Ruthless
-- the White
-- the Reveler
-- the Blessed
-- the Pale
-- the Ugly
-- Keen Eye
-- Sharp Eyed
-- the Greedy
-- Storm Eyed
-- the Brave
-- the Lame
-- Silent Strider
-- the Shadow
-- the Black
-- the Black Prince
-- the Black Mage
-- Oakenshield
-- Longbeard
-- Longshanks
-- the Proud
-- the Precise
-- Two Swords
-- Child of the Desert
-- Thunderlord
-- the Fierce
-- the Honorable
-- Stoneheart
-- the Crimson Mage
-- the Quarrelsome
-- the Bony
-- Bloodblade
+- Amber Blade
+- Amber Eye
+- Ash Walker
+- Ashbeard
+- Autumn Whisper
+- Bearclaw
+- Bearheart
+- Bigfoot
+- Black Arrow
+- Blackthorn
+- Bladesinger
 - Bloodaxe
-- the Bloody
-- the Bloodthirsty
-- the Crippled
-- Staffwalker
-- the Carefree
-- Lightfoot
-- the Lazy
-- Sticky Hand
-- Sticky Fingers
-- Icebreaker
+- Bloodblade
 - Bonebreaker
 - Bonecrusher
-- the Dreamer
-- the Wise
-- the Martyr
-- the Sage
-- Swordmaster
-- the Mighty
-- Strongfist
-- Strongshield
-- the Vengeful
-- Hammerbearer
-- Hammerhand
+- Brightblade
+- Brightshield
+- Bronze Falcon
+- Cave Walker
 - Celestial Warrior
-- the Undefeated
-- the Untamed
-- the Shy
-- the Mad
-- the Defender
-- the Cruel
-- the Possessed
-- Ironfist
-- Hellish Warrior
-- Sweetvoice
+- Child of the Desert
+- Chosen of Heaven
+- Cloud Chaser
+- Coldsteel
+- Crow Friend
+- Dawn Bringer
+- Dawn Watcher
+- Deepwood
+- Desert Serpent
+- Dragonbreath
+- Dusk Walker
+- Eagle Eye
+- Earthshaker
+- Emberheart
 - Fair Eyed
 - Fairhaired
+- Farsight
+- Fire Dancer
+- Firebrand
+- Fireheart
 - Flame Eyed
-- the Pious
-- the Vile
-- the Traveler
-- the Poet
-- the Slayer
-- the Grim
-- the Impulsive
-- Monster Tamer
-- the Damned
-- the Powerful
-- the Confidant
-- Desert Serpent
-- the Smasher
-- the Brigand
-- Redbeard
-- the Red
-- the Strongman
-- Greybeard
-- the Hoary
-- the Modest
-- the Assassin
-- Hiddendagger
-- Dragonbreath
-- the Sorrowful
-- the Calm
-- the Just
-- Silverbeard
-- the Stern
-- the Old
-- Steelarm
-- Steelhand
-- the Timid
-- the Terrible
-- the Severe
-- Mad Eyed
-- the Insane
-- Ashbeard
-- the Generous
-- the Scarlet Hunter
-- Swiftfoot
-- Quickfingers
-- the Bold
-- the Saint
-- the Mysterious
-- the Cowardly
-- Hardhead
-- Toughjaw
-- the Valiant
-- the Wanderer
-- Giantfist
-- Serpent Tongue
+- Flamesinger
+- Forest Keeper
 - Forkbeard
-- Bigfoot
-- the Great
-- the Faithful
-- the Soothsayer
-- the Bashful
-- the Chosen One
-- Chosen of Heaven
-- the Exile
-- Gutripper
-- Legbreaker
-- the Exploiter
-- One Eyed
-- One Handed
-- the Enchanter
-- the Conqueror
-- Stonecrusher
-- the Disgraced
+- Frost Arrow
+- Frostborn
+- Frostheart
+- Ghost Walker
+- Giantfist
 - Goldbeard
 - Goldenhair
-- the Weary
-- the Savior
-- Viper Tongue
-- the Victorious
-nicknames_female:
-- the Adventurer
-- the Bandit
-- the Bard
-- the Merciless
-- the Heartless
-- the Ruthless
-- the White
-- the Reveler
-- the Blessed
-- the Pale
-- the Ugly
-- Keen Eye
-- Sharp Eyed
-- the Greedy
-- Storm Eyed
-- the Brave
-- the Lame
-- Silent Strider
-- the Shadow
-- the Black
-- the Black Princess
-- the Sorceress
-- Oakenshield
-- Longnose
-- Longlegged
-- the Proud
-- the Precise
-- Two Swords
-- Child of the Desert
-- Thunderborn
-- the Fierce
-- the Honorable
-- Stoneheart
-- the Crimson
-- the Quarrelsome
-- the Bony
-- Bloodblade
-- Bloodaxe
-- the Bloody
-- the Bloodthirsty
-- the Crippled
-- Staffwalker
-- the Carefree
-- Lightfoot
-- the Lazy
-- Sticky Hand
-- Sticky Fingers
-- Icebreaker
-- the Gracious
-- Bonecrusher
-- the Dreamer
-- the Wise
-- the Martyr
-- the Kind
-- Swordmistress
-- the Mighty
-- Strongfist
-- Strongshield
-- the Vengeful
-- the Young
-- Hammerhand
-- Celestial Warrior
-- the Undefeated
-- the Untamed
-- the Shy
-- the Mad
-- the Defender
-- the Cruel
-- the Possessed
-- Ironfist
-- Hellish Warrior
-- Sweetvoice
-- Fair Eyed
-- Fairhaired
-- Flame Eyed
-- the Pious
-- the Vile
-- the Traveler
-- the Poetess
-- the Slayer
-- the Grim
-- the Impulsive
-- the Solemn
-- the Damned
-- the Powerful
-- the Confidant
-- Desert Serpent
-- the Smasher
-- the Brigand
-- Redhaired
-- the Red
-- the Strongwoman
-- the Strong
-- the Hoary
-- the Modest
-- the Assassin
-- Hiddendagger
-- Dragonbreath
-- the Sorrowful
-- the Calm
-- the Just
-- Silver Eyed
-- the Stern
-- the Old
-- Steelarm
-- Steelhand
-- the Timid
-- the Terrible
-- the Severe
-- Mad Eyed
-- the Insane
-- Silverhaired
-- the Generous
-- the Scarlet Huntress
-- Swiftfoot
-- Quickfingers
-- the Bold
-- the Saint
-- the Mysterious
-- the Cowardly
-- Hardhead
-- Toughjaw
-- the Valiant
-- the Loyal
-- Giantfist
-- Serpent Tongue
-- the Talkative
-- Bigfoot
-- the Great
-- the Faithful
-- the Enchantress
-- the Bashful
-- the Chosen One
-- Chosen of Heaven
-- the Exiled
+- Goldleaf
+- Greybeard
 - Gutripper
+- Hammerbearer
+- Hammerhand
+- Hardhead
+- Hawk Eye
+- Hellish Warrior
+- Hiddendagger
+- Hill Walker
+- Hollowvoice
+- Icebreaker
+- Iceheart
+- Iron Guard
+- Iron Will
+- Ironfist
+- Ivy Crown
+- Keen Eye
+- Lake Watcher
 - Legbreaker
-- the Exploiter
+- Lightfoot
+- Lionheart
+- Longbeard
+- Longshanks
+- Mad Eyed
+- Mist Walker
+- Monster Tamer
+- Moon Arrow
+- Moon Child
+- Moonblade
+- Moonshadow
+- Mountain Heart
+- Night Falcon
+- Night Watcher
+- Nightblade
+- Nightwhisper
+- Oakenheart
+- Oakenshield
 - One Eyed
 - One Handed
-- the Spellbinder
-- the Conqueror
+- Quickfingers
+- Raven Friend
+- Ravencloak
+- Red Falcon
+- Redbeard
+- River Keeper
+- Rockfist
+- Rune Keeper
+- Runebearer
+- Sand Walker
+- Sea Watcher
+- Seaborn
+- Serpent Tongue
+- Shadow Dancer
+- Shadowblade
+- Shadowhunter
+- Sharp Eyed
+- Shieldbreaker
+- Silent Arrow
+- Silent Strider
+- Silver Arrow
+- Silver Fang
+- Silverbeard
+- Silverleaf
+- Sky Watcher
+- Snow Falcon
+- Snowborn
+- Spearbearer
+- Staffwalker
+- Star Child
+- Star Watcher
+- Starblade
+- Steel Fang
+- Steelarm
+- Steelhand
+- Sticky Fingers
+- Sticky Hand
+- Stone Guard
 - Stonecrusher
+- Stoneheart
+- Storm Bringer
+- Storm Eyed
+- Stormborn
+- Stormcaller
+- Stormheart
+- Strongfist
+- Strongshield
+- Sun Child
+- Sunblade
+- Sunseeker
+- Sweetvoice
+- Swiftfoot
+- Swordmaster
+- the Adventurer
+- the Alchemist
+- the Ancient
+- the Arcane
+- the Ashen
+- the Assassin
+- the Autumnborn
+- the Bandit
+- the Barbarian
+- the Bashful
+- the Beastmaster
+- the Black
+- the Black Mage
+- the Black Prince
+- the Blessed
+- the Bloodsworn
+- the Bloodthirsty
+- the Bloody
+- the Bold
+- the Bony
+- the Brave
+- the Brigand
+- the Bronze
+- the Calm
+- the Carefree
+- the Chosen One
+- the Cinderborn
+- the Cloudborn
+- the Confidant
+- the Conqueror
+- the Copper
+- the Cowardly
+- the Crimson Mage
+- the Crippled
+- the Cruel
+- the Damned
+- the Defender
 - the Disgraced
-- the Forgotten
-- Goldenhair
-- the Weary
+- the Dragonbound
+- the Dragonhearted
+- the Dread Knight
+- the Dreamer
+- the Duskborn
+- the Emerald
+- the Enchanter
+- the Enigmatic
+- the Everliving
+- the Exile
+- the Exploiter
+- the Faithful
+- the Farseeing
+- the Feytouched
+- the Fierce
+- the Flamebound
+- the Frostbitten
+- the Generous
+- the Ghostly
+- the Golden
+- the Granite
+- the Great
+- the Greedy
+- the Grim
+- the Guardian
+- the Heartless
+- the Hexbreaker
+- the Hoary
+- the Honorable
+- the Impulsive
+- the Insane
+- the Ironclad
+- the Jade
+- the Just
+- the Lame
+- the Last Warden
+- the Lazy
+- the Mad
+- the Martyr
+- the Merciless
+- the Mighty
+- the Modest
+- the Moonlit
+- the Mysterious
+- the Necromancer
+- the Oathkeeper
+- the Old
+- the Pale
+- the Phoenixborn
+- the Pious
+- the Poet
+- the Possessed
+- the Powerful
+- the Precise
+- the Proud
+- the Quarrelsome
+- the Red
+- the Reveler
+- the Runecarver
+- the Ruthless
+- the Sage
+- the Saint
+- the Sapphire
 - the Savior
-- Viper Tongue
+- the Scarlet Hunter
+- the Seer
+- the Severe
+- the Shadow
+- the Shadowbound
+- the Shy
+- the Silver
+- the Slayer
+- the Smasher
+- the Soothsayer
+- the Sorrowful
+- the Spellweaver
+- the Spiritcaller
+- the Starborn
+- the Stern
+- the Stormbound
+- the Strongman
+- the Terrible
+- the Thorncrowned
+- the Timid
+- the Traveler
+- the Ugly
+- the Undefeated
+- the Undying
+- the Unseen
+- the Untamed
+- the Valiant
+- the Veilwalker
+- the Vengeful
 - the Victorious
+- the Vile
+- the Voidwalker
+- the Wanderer
+- the Weary
+- the White
+- the Wild Mage
+- the Wise
+- the Wyrmslayer
+- Thornheart
+- Thunderlord
+- Thunderstrike
+- Tide Walker
+- Toughjaw
+- Twilight Watcher
+- Two Swords
+- Viper Tongue
+- White Arrow
+- White Falcon
+- Wildflower
+- Wind Dancer
+- Wind Rider
+- Wolf Friend
+- Wolfheart
+- Wood Walker
+nicknames_female:
+- Amber Blade
+- Amber Eye
+- Ash Walker
+- Autumn Whisper
+- Bearclaw
+- Bearheart
+- Bigfoot
+- Black Arrow
+- Blackthorn
+- Bladesinger
+- Bloodaxe
+- Bloodblade
+- Bonecrusher
+- Brightblade
+- Brightshield
+- Bronze Falcon
+- Cave Walker
+- Celestial Warrior
+- Child of the Desert
+- Chosen of Heaven
+- Cloud Chaser
+- Coldsteel
+- Crow Friend
+- Dawn Bringer
+- Dawn Watcher
+- Deepwood
+- Desert Serpent
+- Dragonbreath
+- Dusk Walker
+- Eagle Eye
+- Earthshaker
+- Emberheart
+- Fair Eyed
+- Fairhaired
+- Farsight
+- Fire Dancer
+- Firebrand
+- Fireheart
+- Flame Eyed
+- Flamesinger
+- Forest Keeper
+- Frost Arrow
+- Frostborn
+- Frostheart
+- Ghost Walker
+- Giantfist
+- Goldenhair
+- Goldleaf
+- Gutripper
+- Hammerhand
+- Hardhead
+- Hawk Eye
+- Hellish Warrior
+- Hiddendagger
+- Hill Walker
+- Hollowvoice
+- Icebreaker
+- Iceheart
+- Iron Guard
+- Iron Will
+- Ironfist
+- Ivy Crown
+- Keen Eye
+- Lake Watcher
+- Legbreaker
+- Lightfoot
+- Lionheart
+- Longlegged
+- Longnose
+- Mad Eyed
+- Mist Walker
+- Moon Arrow
+- Moon Child
+- Moonblade
+- Moonshadow
+- Mountain Heart
+- Night Falcon
+- Night Watcher
+- Nightblade
+- Nightwhisper
+- Oakenheart
+- Oakenshield
+- One Eyed
+- One Handed
+- Quickfingers
+- Raven Friend
+- Ravencloak
+- Red Falcon
+- Redhaired
+- River Keeper
+- Rockfist
+- Rune Keeper
+- Runebearer
+- Sand Walker
+- Sea Watcher
+- Seaborn
+- Serpent Tongue
+- Shadow Dancer
+- Shadowblade
+- Shadowhunter
+- Sharp Eyed
+- Shieldbreaker
+- Silent Arrow
+- Silent Strider
+- Silver Arrow
+- Silver Eyed
+- Silver Fang
+- Silverhaired
+- Silverleaf
+- Sky Watcher
+- Snow Falcon
+- Snowborn
+- Spearbearer
+- Staffwalker
+- Star Child
+- Star Watcher
+- Starblade
+- Steel Fang
+- Steelarm
+- Steelhand
+- Sticky Fingers
+- Sticky Hand
+- Stone Guard
+- Stonecrusher
+- Stoneheart
+- Storm Bringer
+- Storm Eyed
+- Stormborn
+- Stormcaller
+- Stormheart
+- Strongfist
+- Strongshield
+- Sun Child
+- Sunblade
+- Sunseeker
+- Sweetvoice
+- Swiftfoot
+- Swordmistress
+- the Adventurer
+- the Alchemist
+- the Ancient
+- the Arcane
+- the Ashen
+- the Assassin
+- the Autumnborn
+- the Bandit
+- the Bard
+- the Bashful
+- the Beastmaster
+- the Black
+- the Black Princess
+- the Blessed
+- the Bloodsworn
+- the Bloodthirsty
+- the Bloody
+- the Bold
+- the Bony
+- the Brave
+- the Brigand
+- the Bronze
+- the Calm
+- the Carefree
+- the Chosen One
+- the Cinderborn
+- the Cloudborn
+- the Confidant
+- the Conqueror
+- the Copper
+- the Cowardly
+- the Crimson
+- the Crippled
+- the Cruel
+- the Damned
+- the Defender
+- the Disgraced
+- the Dragonbound
+- the Dragonhearted
+- the Dread Knight
+- the Dreamer
+- the Duskborn
+- the Emerald
+- the Enchantress
+- the Enigmatic
+- the Everliving
+- the Exiled
+- the Exploiter
+- the Faithful
+- the Farseeing
+- the Feytouched
+- the Fierce
+- the Flamebound
+- the Forgotten
+- the Frostbitten
+- the Generous
+- the Ghostly
+- the Golden
+- the Gracious
+- the Granite
+- the Great
+- the Greedy
+- the Grim
+- the Guardian
+- the Heartless
+- the Hexbreaker
+- the Hoary
+- the Honorable
+- the Impulsive
+- the Insane
+- the Ironclad
+- the Jade
+- the Just
+- the Kind
+- the Lame
+- the Last Warden
+- the Lazy
+- the Loyal
+- the Mad
+- the Martyr
+- the Merciless
+- the Mighty
+- the Modest
+- the Moonlit
+- the Mysterious
+- the Necromancer
+- the Oathkeeper
+- the Old
+- the Pale
+- the Phoenixborn
+- the Pious
+- the Poetess
+- the Possessed
+- the Powerful
+- the Precise
+- the Proud
+- the Quarrelsome
+- the Red
+- the Reveler
+- the Runecarver
+- the Ruthless
+- the Saint
+- the Sapphire
+- the Savior
+- the Scarlet Huntress
+- the Seer
+- the Severe
+- the Shadow
+- the Shadowbound
+- the Shy
+- the Silver
+- the Slayer
+- the Smasher
+- the Solemn
+- the Sorceress
+- the Sorrowful
+- the Spellbinder
+- the Spellweaver
+- the Spiritcaller
+- the Starborn
+- the Stern
+- the Stormbound
+- the Strong
+- the Strongwoman
+- the Talkative
+- the Terrible
+- the Thorncrowned
+- the Timid
+- the Traveler
+- the Ugly
+- the Undefeated
+- the Undying
+- the Unseen
+- the Untamed
+- the Valiant
+- the Veilwalker
+- the Vengeful
+- the Victorious
+- the Vile
+- the Voidwalker
+- the Weary
+- the White
+- the Wild Mage
+- the Wise
+- the Wyrmslayer
+- the Young
+- Thornheart
+- Thunderborn
+- Thunderstrike
+- Tide Walker
+- Toughjaw
+- Twilight Watcher
+- Two Swords
+- Viper Tongue
+- White Arrow
+- White Falcon
+- Wildflower
+- Wind Dancer
+- Wind Rider
+- Wolf Friend
+- Wolfheart
+- Wood Walker

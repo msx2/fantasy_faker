@@ -1,185 +1,259 @@
 ---
 character:
   name_prefixes_male:
-  - Ae
-  - Arn
   - Abi
+  - Ach
+  - Ae
+  - Aga
+  - Ald
   - Alk
+  - Amal
+  - Ang
+  - Arn
+  - Art
+  - Aven
   - Baa
-  - Beia
   - Bea
-  - Chai
+  - Beia
+  - Bel
+  - Bip
+  - Borl
+  - Cael
   - Cen
-  - Dorn
-  - Dreg
-  - Dov
+  - Chai
+  - Cind
+  - Daer
   - Dap
+  - Del
+  - Dorn
+  - Dov
+  - Dreg
+  - Eld
+  - Esmer
+  - Est
+  - Fael
+  - Fall
+  - Flan
+  - Gal
+  - Grai
+  - Hael
+  - Ith
+  - Jadea
+  - Jar
+  - Jem
+  - Kaa
+  - Kel
+  - Khaz
+  - Kyl
   - Kyth
   - Lave
-  - Tig
-  - Aven
-  - Kyl
-  - My
-  - Ang
-  - Dil
-  - Sar
-  - Bip
-  - Grai
-  - Soan
-  - Rugha
-  - Jadea
-  - Flan
-  - Nys
-  - Nil
-  - Amil
   - Lial
-  - Jem
-  - Timo
-  - Est
-  - Esmer
-  - Path
+  - Lor
+  - Mael
   - Marc
-  - Paer
-  - Aga
-  - Khaz
-  - Ach
-  - Peri
-  - Art
-  - Fall
-  - Kaa
-  - Miy
-  - Borl
   - Mik
-  - Cind
+  - Miy
+  - My
+  - Nil
+  - Nor
+  - Nys
+  - Orin
+  - Paer
+  - Path
+  - Peri
+  - Pyr
+  - Quel
+  - Rhun
+  - Rugha
+  - Sar
+  - Soan
+  - Syl
+  - Thal
+  - Tig
+  - Timo
+  - Vael
   - Wol
   name_sufixes_male:
-  - red
-  - illon
-  - drak
-  - ilo
-  - ker
+  - ahm
   - anian
+  - arok
   - ath
-  - ius
-  - ven
-  - isab
-  - lay
-  - vite
-  - hun
+  - avo
+  - cil
+  - dan
+  - dar
+  - dester
+  - donar
+  - dor
+  - drak
+  - dreth
+  - fen
+  - freano
   - ger
   - gons
-  - ving
-  - rol
-  - lianth
-  - kall
-  - ven
-  - sharr
-  - cil
-  - unube
-  - ahm
-  - lino
+  - hun
   - iba
-  - ivo
-  - freano
-  - avo
+  - illon
   - ilo
-  - donar
-  - jako
-  - mina
-  - rinh
-  - lion
-  - manti
-  - onga
-  - tarea
+  - ilo
   - intre
-  - scire
-  - philus
-  - vadro
-  - arok
-  - olites
+  - isab
+  - ius
+  - ivo
+  - jako
   - ka
+  - kall
+  - ker
+  - las
+  - lay
+  - lianth
+  - lino
+  - lion
+  - lor
+  - manti
+  - mar
+  - mer
+  - mina
+  - mir
   - mythe
+  - nor
+  - olites
+  - onga
+  - philus
   - pil
-  - reni
   - ra
+  - red
+  - reni
+  - ric
+  - rin
+  - rinh
+  - rion
+  - rol
+  - scire
+  - sharr
+  - tarea
+  - thar
+  - thas
+  - thir
   - uan
-  - dester
+  - unube
+  - vadro
+  - val
+  - vel
+  - ven
+  - ven
+  - ving
+  - vite
+  - vor
+  - vorn
   name_prefixes_female:
-  - Ail
+  - Ael
+  - Aer
   - Aid
+  - Ail
   - Ais
   - Alla
   - Bar
   - Ber
+  - Bri
   - Cai
   - Car
   - Cel
+  - Cora
+  - Dae
   - Dan
   - Dar
   - Dek
   - Dor
-  - Eil
   - Eal
+  - Eil
+  - Ela
+  - Fae
   - Fin
   - Gud
-  - Is
-  - Ink
+  - Gwen
   - Ill
-  - Jus
+  - Ily
+  - Ink
+  - Is
   - Jer
+  - Jus
+  - Kael
   - Kat
   - Lin
-  - Lus
+  - Lira
   - Lis
+  - Lus
+  - Mae
   - Mer
   - Mud
   - Nao
   - Ner
   - Nin
+  - Ny
   - Oi
   - Oks
-  - Pur
+  - Oriel
   - Per
+  - Pur
+  - Rae
   - Red
   - Ris
   - Set
   - Sus
-  - Tir
+  - Syl
   - Tan
-  - Vis
+  - Thia
+  - Tir
+  - Vael
   - Ver
-  - Xis
+  - Vis
   - Xar
+  - Xis
+  - Yl
   - Zer
   name_sufixes_female:
-  - ara
-  - ani
-  - asa
-  - aris
   - ana
+  - ani
   - ara
-  - era
-  - eris
-  - ena
-  - eka
+  - ara
+  - aris
+  - asa
   - ea
+  - eka
+  - elia
+  - elle
+  - ena
+  - era
+  - eri
+  - eris
+  - eth
+  - iel
+  - ien
+  - ienna
+  - ina
+  - inael
+  - ira
   - iri
   - isi
-  - ira
-  - ina
-  - ien
-  - oka
-  - ona
-  - oli
+  - issa
+  - lida
+  - lini
+  - liri
+  - lisa
   - odi
+  - oka
+  - oli
+  - ona
   - oni
+  - ora
+  - riel
+  - uka
+  - ukis
   - una
   - uni
   - ura
   - uri
-  - uka
-  - ukis
-  - lini
-  - liri
-  - lida
-  - lisa
+  - wyn
+  - yla
+  - ys
