@@ -7,6 +7,89 @@ RSpec.describe FantasyFaker::Character do
     FantasyFaker.reset_locale
   end
 
+  describe '.unique' do
+    let(:common_data) do
+      {
+        'name_prefixes_male' => ['Ar'], 'name_sufixes_male' => ['ion'],
+        'name_prefixes_female' => ['El'], 'name_sufixes_female' => ['ara']
+      }.transform_values { |values| FantasyFaker::ArrayUtils.const_array(values) }
+    end
+
+    let(:locale_data) do
+      {
+        'nicknames_male' => ['the Bold'], 'nicknames_female' => ['the Bold']
+      }.transform_values { |values| FantasyFaker::ArrayUtils.const_array(values) }
+    end
+
+    before do
+      allow(described_class).to receive_messages(common_data: common_data, locale_data: locale_data)
+    end
+
+    after { described_class.unique.clear }
+
+    {
+      male_first_name: ['Arion'], female_first_name: ['Elara'],
+      male_nickname: ['the Bold'], female_nickname: ['the Bold'],
+      male_name: ['Arion', 'Arion the Bold'], female_name: ['Elara', 'Elara the Bold']
+    }.each do |method, values|
+      it "returns distinct #{method} values and raises when exhausted" do
+        generated = Array.new(values.size) { described_class.unique.public_send(method) }
+
+        expect(generated).to match_array(values)
+        expect { described_class.unique.public_send(method) }
+          .to raise_error(FantasyFaker::UniqueGenerator::RetryLimitExceeded)
+      end
+    end
+
+    it 'tracks each generation method independently' do
+      expect(described_class.unique.male_nickname).to eq('the Bold')
+      expect(described_class.unique.female_nickname).to eq('the Bold')
+    end
+
+    it 'stops after exactly 10,000 unsuccessful attempts' do
+      described_class.unique.male_nickname
+      allow(described_class).to receive(:male_nickname).and_call_original
+
+      expect { described_class.unique.male_nickname }
+        .to raise_error(FantasyFaker::UniqueGenerator::RetryLimitExceeded)
+      expect(described_class).to have_received(:male_nickname).exactly(10_000).times
+    end
+
+    it 'clears history for every method so values can be reused' do
+      described_class.unique.male_nickname
+      described_class.unique.female_first_name
+      described_class.unique.clear
+
+      expect(described_class.unique.male_nickname).to eq('the Bold')
+      expect(described_class.unique.female_first_name).to eq('Elara')
+    end
+
+    it 'leaves ordinary generation unchanged' do
+      described_class.unique.male_nickname
+
+      expect(Array.new(2) { described_class.male_nickname }).to eq(['the Bold', 'the Bold'])
+    end
+
+    it 'preserves history when the locale changes' do
+      described_class.unique.male_nickname
+      FantasyFaker.use_locale(:pl)
+
+      expect { described_class.unique.male_nickname }
+        .to raise_error(FantasyFaker::UniqueGenerator::RetryLimitExceeded)
+    end
+
+    it 'reports supported generator methods' do
+      expect(described_class.unique).to respond_to(:male_name, :female_name)
+      expect(described_class.unique).not_to respond_to(:unknown_generator)
+    end
+
+    it 'raises NoMethodError for unknown methods' do
+      unique = described_class.unique
+
+      expect { unique.unknown_generator }.to raise_error(NoMethodError)
+    end
+  end
+
   { male: 4998, female: 2760 }.each do |gender, minimum_names|
     describe "#{gender} first-name combinations" do
       let(:first_names) do

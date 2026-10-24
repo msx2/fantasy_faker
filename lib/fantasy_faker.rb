@@ -2,6 +2,7 @@
 
 require_relative 'fantasy_faker/version'
 require_relative 'fantasy_faker/utils/array_utils'
+require_relative 'fantasy_faker/unique_generator'
 require_relative 'fantasy_faker/utils/base_module'
 require_relative 'fantasy_faker/character'
 

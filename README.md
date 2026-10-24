@@ -50,6 +50,35 @@ FantasyFaker.use_locale(:pl) do
 end
 ```
 
+### Unique values
+
+Use `.unique` with any character generator: `male_first_name`, `female_first_name`,
+`male_nickname`, `female_nickname`, `male_name`, or `female_name`.
+
+```ruby
+FantasyFaker::Character.unique.male_name
+FantasyFaker::Character.unique.female_nickname
+
+# Reset all character generators' uniqueness history (for example, between tests)
+FantasyFaker::Character.unique.clear
+```
+
+In FactoryBot (formerly FactoryGirl), use it inside the attribute block:
+
+```ruby
+factory :character do
+  name { FantasyFaker::Character.unique.male_name }
+end
+```
+
+Values are tracked separately for each method within the current Ruby process,
+including across locale changes. Ordinary calls without `.unique` are not tracked.
+This does not check existing database records or coordinate separate processes.
+
+If no new value is found after 10,000 attempts, generation raises
+`FantasyFaker::UniqueGenerator::RetryLimitExceeded` rather than returning a duplicate.
+Because generation is random, this can happen before every possible value has been used.
+
 ## Development
 
 Dictionary data is stored in YAML files under `locales/`:

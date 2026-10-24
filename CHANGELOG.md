@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0 - October 24, 2026
+
+- Add `.unique` to all character name and nickname generators, with per-method tracking across locale changes.
+- Raise `FantasyFaker::UniqueGenerator::RetryLimitExceeded` after 10,000 unsuccessful attempts to generate a new value.
+- Add `FantasyFaker::Character.unique.clear` to reset uniqueness tracking.
+
 ## 0.2.0 - October 21, 2026
 
 - Expand the first-name dictionaries from 2,499 to 5,040 distinct male names and from 1,380 to 2,795 distinct female names.

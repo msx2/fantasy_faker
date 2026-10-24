@@ -5,6 +5,10 @@ require_relative 'array_utils'
 
 module FantasyFaker
   module BaseModule
+    def unique
+      @unique_generator ||= UniqueGenerator.new(self)
+    end
+
     def const_missing(const_name)
       fetch_data(const_name)
     end
