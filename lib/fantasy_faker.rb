@@ -5,6 +5,7 @@ require_relative 'fantasy_faker/utils/array_utils'
 require_relative 'fantasy_faker/unique_generator'
 require_relative 'fantasy_faker/utils/base_module'
 require_relative 'fantasy_faker/character'
+require_relative 'fantasy_faker/location'
 
 module FantasyFaker
   DEFAULT_LOCALE = :en

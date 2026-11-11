@@ -50,17 +50,65 @@ FantasyFaker.use_locale(:pl) do
 end
 ```
 
+### Locations
+
+`FantasyFaker::Location` uses a shared pool of 1,000 invented proper names across
+16 categories, with English (`:en`) and Polish (`:pl`) landmark descriptions:
+
+Cities return the proper name alone. Other categories combine it with a localized
+landmark type and optional prefixes or suffixes, mixing neutral and dark fantasy styles:
+`Alador Forest`, `Dark Alador Forest`, `Las Alador` or `Puszcza Alador Czarnych Cierni`.
+Proper names are shared between locales; changing language changes the description,
+not the underlying proper-name pool.
+
+| Method | Category |
+| --- | --- |
+| `city` | Cities |
+| `sewer` | Urban sewers |
+| `meadow` | Meadows and wetlands |
+| `forest` | Forests |
+| `swamp` | Swamps |
+| `waters` | Rivers and lakes |
+| `desert` | Deserts and dunes |
+| `cave` | Caves |
+| `mine` | Mines |
+| `mountain` | Mountains |
+| `volcanic_field` | Volcanic fields |
+| `ruins` | Ruins |
+| `stronghold` | Strongholds |
+| `graveyard` | Graveyards |
+| `abandoned_monastery` | Abandoned monasteries |
+| `labyrinth_or_arena` | Labyrinths and arenas |
+
+Use `name` to choose a random category and generate a name from it:
+
+```ruby
+FantasyFaker::Location.city # => "Alador"
+FantasyFaker::Location.forest # => "Dark Alador Forest"
+FantasyFaker::Location.name # => a name from any location category
+
+FantasyFaker.use_locale(:pl) do
+  FantasyFaker::Location.city # => "Alador"
+  FantasyFaker::Location.forest # => "Mroczny Las Alador"
+  FantasyFaker::Location.waters # => "Jezioro Alador Zatopionych Dzwonów"
+end
+```
+
 ### Unique values
 
-Use `.unique` with any character generator: `male_first_name`, `female_first_name`,
-`male_nickname`, `female_nickname`, `male_name`, or `female_name`.
+Use `.unique` with any character or location generator.
 
 ```ruby
 FantasyFaker::Character.unique.male_name
 FantasyFaker::Character.unique.female_nickname
+FantasyFaker::Location.unique.city
+FantasyFaker::Location.unique.name
 
 # Reset all character generators' uniqueness history (for example, between tests)
 FantasyFaker::Character.unique.clear
+
+# Location history is separate from character history
+FantasyFaker::Location.unique.clear
 ```
 
 In FactoryBot (formerly FactoryGirl), use it inside the attribute block:
@@ -69,22 +117,38 @@ In FactoryBot (formerly FactoryGirl), use it inside the attribute block:
 factory :character do
   name { FantasyFaker::Character.unique.male_name }
 end
+
+factory :location do
+  name { FantasyFaker::Location.unique.forest }
+end
 ```
 
-Values are tracked separately for each method within the current Ruby process,
-including across locale changes. Ordinary calls without `.unique` are not tracked.
-This does not check existing database records or coordinate separate processes.
+Character generators track values separately for each method. Location generators share
+one proper-name history across **all categories, `.name`, and both locales**. For example,
+after `.unique.city` returns `Alador`, no other unique location generator can return
+`Las Alador`, `Dark Alador Forest` or any other variant containing that proper name.
+Prefixes and suffixes do not count as new proper names.
+
+Character and location histories are separate. Ordinary calls without `.unique` are not
+tracked and can still reuse names. Tracking happens within the current Ruby process;
+it does not check existing database records or coordinate separate processes.
 
 If no new value is found after 10,000 attempts, generation raises
 `FantasyFaker::UniqueGenerator::RetryLimitExceeded` rather than returning a duplicate.
 Because generation is random, this can happen before every possible value has been used.
+The shared location pool contains 1,000 proper names in total, not 1,000 per category
+or language. Use `FantasyFaker::Location.unique.clear` between tests when names can be reused;
+this resets the history for all location categories at once.
 
 ## Development
 
 Dictionary data is stored in YAML files under `locales/`:
-- `locales/common.yml`: language-independent lists (e.g. name prefixes and suffixes), grouped by module name (`character:`)
+- `locales/common.yml`: language-independent character name components (`character:`) and location proper names (`location:`)
 - `locales/en/<module>.yml`: English entries for a module
 - `locales/pl/<module>.yml`: Polish entries for a module
+
+Location locale files contain templates with a single `%{name}` placeholder, including
+neutral landmark types and dark fantasy prefixes and suffixes.
 
 ```sh
 bundle install

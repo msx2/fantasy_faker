@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0 - November 11, 2026
+
+- Add `FantasyFaker::Location` with 16 location categories and a general-purpose `.name` generator.
+- Add a shared pool of 1,000 invented location names, with English and Polish landmark templates and dark fantasy prefixes and suffixes.
+- Share location `.unique` history across all categories, `.name`, and locales, reserving the proper name regardless of decorative variants; keep character uniqueness unchanged.
+- Add `FantasyFaker::Location.unique.clear` to reset the shared location history.
+
 ## 0.3.0 - October 24, 2026
 
 - Add `.unique` to all character name and nickname generators, with per-method tracking across locale changes.

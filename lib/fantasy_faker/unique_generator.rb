@@ -6,8 +6,9 @@ module FantasyFaker
   class UniqueGenerator
     class RetryLimitExceeded < RuntimeError; end
 
-    def initialize(generator)
+    def initialize(generator, &key)
       @generator = generator
+      @key = key
       @previous_results = Hash.new { |results, method| results[method] = Set.new }
     end
 
@@ -20,9 +21,12 @@ module FantasyFaker
     def method_missing(method, ...)
       return super unless @generator.respond_to?(method)
 
+      # Custom keys identify values across methods, not within one method.
+      previous_results = @previous_results[@key ? nil : method]
       10_000.times do
         result = @generator.public_send(method, ...)
-        return result if @previous_results[method].add?(result)
+        key = @key ? @key.call(result) : result
+        return result if previous_results.add?(key)
       end
 
       raise RetryLimitExceeded, "Unable to generate a unique #{method} after 10,000 attempts"
